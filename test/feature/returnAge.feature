@@ -7,6 +7,6 @@ Scenario Outline: Return the age of a person using API
     Then response should return the Age>0
 
     Examples:
-        | name                  |   
-        | John Jeni             |
+        | name                             |   
+        | Tamil Selvi Marappan             |
      
