@@ -8,5 +8,5 @@ Scenario Outline: Return the age of a person using API
 
     Examples:
         | name        |   
-        | Tamil selvi |
+        | John Jeni   |
      
