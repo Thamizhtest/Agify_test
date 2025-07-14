@@ -15,6 +15,9 @@ Given('the API is accessible', async function () {
 });
 
 When('I call the API with the name {string}', async function (name: string) {
+  if (!name || name.trim() === '') {
+    throw new Error('Missing name parameter:name cannot be empty');
+  }
   fullName = name;
  //const firstName = name.split(' ')[0];
  const firstName = name;
