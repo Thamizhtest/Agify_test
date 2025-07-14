@@ -18,11 +18,20 @@ Scenario Outline: Return the age of a person using API
     Then response should return the Age>0
 
     Examples:
-        | name            |   
-        | John Jeni       |
+        | name              |   
+        | John Jeni         |
+        | John              |
+        | Michel Joe Clinto |
+        |                   |
+
 ## Expected result
 
 Passed name : John Jeni , API response { count:277407,name:'John Jeni',age:74 }
+Passed name : John , API response { count:277407,name:'John Jeni',age:74 }
+Passed name : Michel Joe Clinto , API response { count:73797,name:'Michel Joe Clinto',age:66 }
+Error: Missing 'name' parameter
+
+
 ##
 Node version :v22.17.0
 NPM version  :10.9.2
